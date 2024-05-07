@@ -5,7 +5,7 @@ const router = createRouter({
   routes: [
     {path:'', component:()=>import('../public/pages/the-home-page/the-home-page.component.vue')},
     {path:'/home', component: ()=> import('../public/pages/the-home-page/the-home-page.component.vue') },
-    {path:'/nursing/result-exams-language', component:()=>import('../nursing/pages/mental-state-exams/the-results-page.component.vue')},
+    {path:'/nursing/mental-state-exams', component:()=>import('../nursing/pages/mental-state-exams/the-results-page.component.vue')},
     {path:'/:pathMatch(.*)*', component:()=>import('../public/pages/the-notfound-page/the-notfound-page.component.vue')}
   ]
 })
