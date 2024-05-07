@@ -85,12 +85,12 @@ export default {
     <pv-card aria-label="The card content">
       <template #title> <img :src="exam.patient.photoUrl" width="400"> </template>
       <template #content>
-        <p class="m-0"> Patient Name: {{exam.patient.firstName + ' ' + exam.patient.lastName}}</p>
-        <p class="m-0"> Born Date: {{exam.patient.birthDate}}</p>
-        <p class="m-0"> Exam Date: {{exam.exam.examDate}}</p>
-        <p class="m-0"> Examiner Name: {{exam.examiner.firstName + ' ' + exam.examiner.lastName}}</p>
-        <p class="m-0"> Examinier National Provider: {{exam.examiner.nationalProviderIdentifier}}</p>
-        <p class="m-0"> Total Score: {{getTotalScore(exam.exam.id)}}</p>
+        <p class="m-0" aria-label="Patient Name"> {{$t('patientName')}}: {{exam.patient.firstName + ' ' + exam.patient.lastName}}</p>
+        <p class="m-0" aria-label="Born Date"> {{$t('bornDate')}}: {{exam.patient.birthDate}}</p>
+        <p class="m-0" aria-label="Exam Date"> {{$t('examDate')}}: {{exam.exam.examDate}}</p>
+        <p class="m-0" aria-label="Examiner Name">{{$t('examinerName')}}: {{exam.examiner.firstName + ' ' + exam.examiner.lastName}}</p>
+        <p class="m-0" aria-label="Examiner National Provider"> {{$t('examinerNationalProvider')}}: {{exam.examiner.nationalProviderIdentifier}}</p>
+        <p class="m-0" aria-label="Total score"> {{$t('totalScore')}}: {{getTotalScore(exam.exam.id)}}</p>
       </template>
     </pv-card>
   </div>
