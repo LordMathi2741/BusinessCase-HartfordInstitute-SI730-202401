@@ -1,5 +1,5 @@
 <script>
-import ExamResultsCards from '@/nursing/components/exam-results-cards.component.vue'
+import ExamResultsCards from '@/nursing/components/exam-results-cards/exam-results-cards.component.vue'
 
 export default {
   name: 'the-results-page.component',
