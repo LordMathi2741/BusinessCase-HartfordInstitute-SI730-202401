@@ -1,0 +1,5 @@
+const footer_es = {
+  phrase:'HIGN promueve la atención médica equitativa para los adultos mayores al educar a la fuerza laboral y a los futuros profesionales, informar las políticas, promover la investigación y brindar programas comunitarios.'
+}
+
+export default footer_es;
